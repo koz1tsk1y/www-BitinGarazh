@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -7,7 +7,442 @@
     <title>fff</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    
+    <div class="wrapper">
+
+      <header class="header">
+        <div class="header__container container">
+          <div class="header__logo">
+            <img src="public/images/logo.svg" alt="Батин гараж">
+          </div>
+          <div class="header__inner">
+            <div class="header__top">
+              <nav class="header__nav">
+                <ul class="header__nav-list">
+                  <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Главная</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">О нас</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Акции</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__region region">
+                <div class="region__title">Регион</div>
+                <ul class="region__list">
+                  <li class="region__list-item region__list-item--active">Россия</li>
+                  <li class="region__list-item">Казахстан</li>
+                  <li class="region__list-item">Беларусь</li>
+                </ul>
+              </div>
+              <div class="header__contacts">
+                <a class="header__contact" href="tel:88001234567">8 800 123 45 67</a>
+              </div>
+            </div>
+            <div class="header__main">
+              <div class="header__catalog">
+                <div class="header__catalog-btn">Каталог</div>
+                <div class="header__catalog-body">
+                  <div class="header__catalog-title"></div>
+                  <div class="header__catalog-tabs tabs">
+                    <div class="tabs__btns">
+                      <button class="tabs__btn btn tabs__btn--active">Легковые</button>
+                      <button class="tabs__btn btn">Грузовые</button>
+                    </div>
+                    <div class="tabs__items">
+                      <div class="tabs__item tabs__item--active">
+                        <div class="header__catalog-links">
+                          <a class="header__catalog-link" href="#">Audi</a>
+                          <a class="header__catalog-link" href="#">Citroen</a>
+                          <a class="header__catalog-link" href="#">JETOUR</a>
+                          <a class="header__catalog-link" href="#">Mitsubishi</a>
+                          <a class="header__catalog-link" href="#">Skoda</a>
+                          <a class="header__catalog-link" href="#">BMW</a>
+                          <a class="header__catalog-link" href="#">Daewoo</a>
+                          <a class="header__catalog-link" href="#">Jaecoo</a>
+                          <a class="header__catalog-link" href="#">Nissan</a>
+                          <a class="header__catalog-link" href="#">TENET</a>
+                          <a class="header__catalog-link" href="#">Belgee</a>
+                          <a class="header__catalog-link" href="#">Ford</a>
+                          <a class="header__catalog-link" href="#">Kia</a>
+                          <a class="header__catalog-link" href="#">Omoda</a>
+                          <a class="header__catalog-link" href="#">Toyota</a>
+                          <a class="header__catalog-link" href="#">Changan</a>
+                          <a class="header__catalog-link" href="#">Geely</a>
+                          <a class="header__catalog-link" href="#">Land Rover</a>
+                          <a class="header__catalog-link" href="#">Opel</a>
+                          <a class="header__catalog-link" href="#">Volkswagen</a>
+                          <a class="header__catalog-link" href="#">Chery</a>
+                          <a class="header__catalog-link" href="#">Haval</a>
+                          <a class="header__catalog-link" href="#">Lexus</a>
+                          <a class="header__catalog-link" href="#">Peugeot</a>
+                          <a class="header__catalog-link" href="#">Volvo</a>
+                          <a class="header__catalog-link" href="#">Chevrolet</a>
+                          <a class="header__catalog-link" href="#">Honda</a>
+                          <a class="header__catalog-link" href="#">Mazda</a>
+                          <a class="header__catalog-link" href="#">Porsche</a>
+                          <a class="header__catalog-link" href="#">Voyah</a>
+                          <a class="header__catalog-link" href="#">LADA</a>
+                          <a class="header__catalog-link" href="#">Hyundai</a>
+                          <a class="header__catalog-link" href="#">Mercedes-Benz</a>
+                          <a class="header__catalog-link" href="#">Renault</a>
+                        </div>
+                      </div>
+                      <div class="tabs__item">
+                        <div class="header__catalog-links">
+                          <a class="header__catalog-link" href="#">Audi</a>
+                          <a class="header__catalog-link" href="#">Citroen</a>
+                          <a class="header__catalog-link" href="#">JETOUR</a>
+                          <a class="header__catalog-link" href="#">Mitsubishi</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <form class="header__search-form search-form" action="">
+                <input class="search-form__input" type="text">
+                <button class="search-form__submit" type="submit"></button>
+              </form>
+              <div class="header__actions actions">
+                <div class="actions__item">
+                  <div class="actions__item-icon">
+                    <img src="public/images/car.svg" alt="Автомобиль">
+                  </div>
+                  <div class="actions__item-title">Гараж</div>
+                </div>
+                <div class="actions__item">
+                  <div class="actions__item-icon">
+                    <img src="public/images/box.svg" alt="Ящик">
+                  </div>
+                  <div class="actions__item-title">Заказы</div>
+                </div>
+                <div class="actions__item">
+                  <div class="actions__item-icon">
+                    <img src="public/images/car.svg" alt="Корзина">
+                  </div>
+                  <div class="actions__item-title">Корзина</div>
+                </div>
+              </div>
+              <button class="header__login login-btn btn" data-login>Вход</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- /header -->
+
+      <main class="main">
+
+        <section class="hero-section">
+          <div class="hero-section__container container">
+            <div class="hero-section__slider swiper">
+              <div class="swiper-wrapper">
+                <div class="hero-section__slide swiper-slide">
+                  <div class="hero-section__slide-content">
+                    <div class="hero-section__slide-title">Фильтры для авто со скидкой до 20%</div>
+                    <div class="hero-section__slide-text">
+                      <p>Меняйте фильтры вовремя — экономьте на ремонте двигателя</p>
+                    </div>
+                    <a class="hero-section__slide-btn btn" href="#">В каталог</a>
+                  </div>
+                  <div class="hero-section__slide-image">
+                    <img src="public/images/banner1.jpg" alt="Фильтры для авто со скидкой до 20%">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+        <!-- /hero-section -->
+
+        <section class="categories-section section">
+          <div class="container">
+            <h2 class="section__title">Категории товаров</h2>
+            <div class="categories">
+              <a class="categories__item" href="#">
+                <div class="categories__item-title">Оригинальные запчасти</div>
+                <div class="categories__item-image">
+                  <img src="public/images/cat-image.jpg" alt="Оригинальные запчасти">
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- /categories-section -->
+
+        <section class="products-section section">
+          <div class="container">
+            <h2 class="section__title">Запчасти для ТО</h2>
+            <div class="products swiper">
+              <div class="swiper-wrapper">
+                <div class="products__item swiper-slide">
+                  <div class="products__item-image">
+                    <img src="public/images/product-image.jpg" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
+                  </div>
+                  <small class="products__item-model">Артикул: 111111111111111111111111</small>
+                  <p class="products__item-title">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</p>
+                  <span class="products__item-price">10 000 000 ₽</span>
+                  <button class="products__item-btn btn">В корзину</button>
+                  <button class="products__item-favorite"></button>
+                </div>
+                <div class="products__item swiper-slide">
+                  <div class="products__item-image">
+                    <img src="public/images/product-image.jpg" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
+                  </div>
+                  <small class="products__item-model">Артикул: 111111111111111111111111</small>
+                  <p class="products__item-title">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</p>
+                  <span class="products__item-price">10 000 000 ₽</span>
+                  <button class="products__item-btn btn">В корзину</button>
+                  <button class="products__item-favorite"></button>
+                </div>
+                <div class="products__item swiper-slide">
+                  <div class="products__item-image">
+                    <img src="public/images/product-image.jpg" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
+                  </div>
+                  <small class="products__item-model">Артикул: 111111111111111111111111</small>
+                  <p class="products__item-title">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</p>
+                  <span class="products__item-price">10 000 000 ₽</span>
+                  <button class="products__item-btn btn">В корзину</button>
+                  <button class="products__item-favorite"></button>
+                </div>
+                <div class="products__item swiper-slide">
+                  <div class="products__item-image">
+                    <img src="public/images/product-image.jpg" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
+                  </div>
+                  <small class="products__item-model">Артикул: 111111111111111111111111</small>
+                  <p class="products__item-title">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</p>
+                  <span class="products__item-price">10 000 000 ₽</span>
+                  <button class="products__item-btn btn">В корзину</button>
+                  <button class="products__item-favorite"></button>
+                </div>
+                <div class="products__item swiper-slide">
+                  <div class="products__item-image">
+                    <img src="public/images/product-image.jpg" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
+                  </div>
+                  <small class="products__item-model">Артикул: 111111111111111111111111</small>
+                  <p class="products__item-title">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</p>
+                  <span class="products__item-price">10 000 000 ₽</span>
+                  <button class="products__item-btn btn">В корзину</button>
+                  <button class="products__item-favorite"></button>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </section>
+        <!-- /products-section -->
+
+        <section class="about-section section">
+          <div class="about-section__container container">
+            <div class="section__header">
+              <h2 class="section__title"><span>Батин Гараж</span> - лучший выбор для профессионалов и любителей</h2>
+              <div class="section__text">
+                <p>Мы - ведущая компания на рынке автозапчастей, с опытом более 10 лет, благодаря нам миллионы клиентов сэкономили деньги и получили наилучший сервис,</p>
+              </div>
+            </div>
+            <div class="highlights">
+              <div class="highlights__item">
+                <span class="highlights__item-title"> 3500</span>
+                <span class="highlights__item-description">брендов</span>
+              </div>
+              <div class="highlights__item">
+                <span class="highlights__item-title"> 22 млн</span>
+                <span class="highlights__item-description">товаров</span>
+              </div>
+              <div class="highlights__item">
+                <span class="highlights__item-title"> 6 млн</span>
+                <span class="highlights__item-description">клиентов</span>
+              </div>
+              <div class="highlights__item">
+                <span class="highlights__item-title"> 1200</span>
+                <span class="highlights__item-description">поставщиков</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /about-section -->
+
+        <section class="products-section section">
+          <div class="container">
+            <h2 class="section__title">Товары с уценкой</h2>
+            <div class="products swiper">
+              <div class="swiper-wrapper">
+                <div class="products__item swiper-slide">
+                  <div class="products__item-image">
+                    <img src="public/images/product-image.jpg" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
+                  </div>
+                  <small class="products__item-model">Артикул: 111111111111111111111111</small>
+                  <p class="products__item-title">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</p>
+                  <span class="products__item-price">10 000 000 ₽ <small>10 000 000 ₽</small></span>
+                  <button class="products__item-btn btn">В корзину</button>
+                  <button class="products__item-favorite"></button>
+                </div>
+                <div class="products__item swiper-slide">
+                  <div class="products__item-image">
+                    <img src="public/images/product-image.jpg" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
+                  </div>
+                  <small class="products__item-model">Артикул: 111111111111111111111111</small>
+                  <p class="products__item-title">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</p>
+                  <span class="products__item-price">10 000 000 ₽ <small>10 000 000 ₽</small></span>
+                  <button class="products__item-btn btn">В корзину</button>
+                  <button class="products__item-favorite"></button>
+                </div>
+                <div class="products__item swiper-slide">
+                  <div class="products__item-image">
+                    <img src="public/images/product-image.jpg" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
+                  </div>
+                  <small class="products__item-model">Артикул: 111111111111111111111111</small>
+                  <p class="products__item-title">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</p>
+                  <span class="products__item-price">10 000 000 ₽ <small>10 000 000 ₽</small></span>
+                  <button class="products__item-btn btn">В корзину</button>
+                  <button class="products__item-favorite"></button>
+                </div>
+                <div class="products__item swiper-slide">
+                  <div class="products__item-image">
+                    <img src="public/images/product-image.jpg" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
+                  </div>
+                  <small class="products__item-model">Артикул: 111111111111111111111111</small>
+                  <p class="products__item-title">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</p>
+                  <span class="products__item-price">10 000 000 ₽ <small>10 000 000 ₽</small></span>
+                  <button class="products__item-btn btn">В корзину</button>
+                  <button class="products__item-favorite"></button>
+                </div>
+                <div class="products__item swiper-slide">
+                  <div class="products__item-image">
+                    <img src="public/images/product-image.jpg" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
+                  </div>
+                  <small class="products__item-model">Артикул: 111111111111111111111111</small>
+                  <p class="products__item-title">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</p>
+                  <span class="products__item-price">10 000 000 ₽ <small>10 000 000 ₽</small></span>
+                  <button class="products__item-btn btn">В корзину</button>
+                  <button class="products__item-favorite"></button>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </section>
+        <!-- /products-section -->
+
+        <section class="section">
+          <div class="container">
+            <h2 class="section__title">Работаем по ЭДО</h2>
+            <div class="section__text">
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus leo eu aenean sed diam urna tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas iaculis massa nisl malesuada lacinia integer nunc posuere ut hendrerit semper vel class aptent taciti sociosqu ad litora torquent per conubia nostra inceptos himenaeos orci varius natoque penatibus et magnis dis parturient montes nascetur ridiculus mus donec rhoncus eros lobortis nulla molestie mattis scelerisque maximus eget fermentum odio phasellus non purus est efficitur laoreet mauris pharetra vestibulum fusce dictum risus blandit quis suspendisse aliquet nisi sodales consequat magna ante condimentum neque at luctus nibh finibus facilisis dapibus etiam interdum tortor ligula congue sollicitudin erat viverra ac tincidunt nam porta elementum a enim euismod quam justo lectus commodo augue arcu dignissim velit aliquam imperdiet mollis nullam volutpat porttitor ullamcorper rutrum gravida cras eleifend turpis fames primis vulputate ornare sagittis vehicula praesent dui felis venenatis ultrices proin libero feugiat tristique accumsan maecenas potenti ultricies habitant morbi senectus netus suscipit auctor curabitur facilisi cubilia curae hac habitasse platea dictumst lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus leo eu aenean sed diam urna tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas iaculis massa nisl malesuada lacinia integer nunc posuere ut hendrerit semper vel class aptent taciti sociosqu ad litora torquent per conubia nostra inceptos himenaeos.</p>
+            </div>
+          </div>
+        </section>
+        <!-- /section -->
+
+        <section class="section">
+          <div class="container">
+            <h2 class="section__title">Условия возврата товара</h2>
+            <div class="section__text">
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus leo eu aenean sed diam urna tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas iaculis massa nisl malesuada lacinia integer nunc posuere ut hendrerit semper vel class aptent taciti sociosqu ad litora torquent per conubia nostra inceptos himenaeos orci varius natoque penatibus et magnis dis parturient montes nascetur ridiculus mus donec rhoncus eros lobortis nulla molestie mattis scelerisque maximus eget fermentum odio phasellus non purus est efficitur laoreet mauris pharetra vestibulum fusce dictum risus blandit quis suspendisse aliquet nisi sodales consequat magna ante condimentum neque at luctus nibh finibus facilisis dapibus etiam interdum tortor ligula congue sollicitudin erat viverra ac tincidunt nam porta elementum a enim euismod quam justo lectus commodo augue arcu dignissim velit aliquam imperdiet mollis nullam volutpat porttitor ullamcorper rutrum gravida cras eleifend turpis fames primis vulputate ornare sagittis vehicula praesent dui felis venenatis ultrices proin libero feugiat tristique accumsan maecenas potenti ultricies habitant morbi senectus netus suscipit auctor curabitur facilisi cubilia curae hac habitasse platea dictumst lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus leo eu aenean sed diam urna tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas iaculis massa nisl malesuada lacinia integer nunc posuere ut hendrerit semper vel class aptent taciti sociosqu ad litora torquent per conubia nostra inceptos himenaeos.</p>
+            </div>
+          </div>
+        </section>
+        <!-- /section -->
+
+      </main>
+      <!-- /main -->
+
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__info">
+            <a class="footer__logo" href="/">
+              <img src="public/images/logo.svg" alt="Батин гараж">
+            </a>
+            <div class="footer__contacts">
+              <a class="footer__contact" href="tel:88001234567">8 800 123 45 67</a>
+              <a class="footer__contact" href="mailto:batyngarage@mail.ru">batyngarage@mail.ru</a>
+              <address><a class="footer__contact" href="https://yandex.by/maps/-/CPuXYYYU" target="_blank">Ул. Пушкина д. 15</a></address>
+            </div>
+            <div class="footer__socials socials">
+              <a class="social__item" href="#">
+                <img src="public/images/vk.svg" alt="vk">
+              </a>
+              <a class="social__item" href="#">
+                <img src="public/images/tg.svg" alt="telegram">
+              </a>
+            </div>
+          </div>
+          <div class="footer__menu">
+            <div class="footer__menu-title">Покупателям</div>
+            <nav class="footer__nav">
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Условия доставки</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Способы оплаты</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Возврат товара</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Возврат средств</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Как сделать заказ</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Политика конфиденциальности</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__menu">
+            <div class="footer__menu-title">Компания</div>
+            <nav class="footer__nav">
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">О нас</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Новости</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Вакансии</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Магазины</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="#">Поставщикам</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__feedback">
+            <div class="footer__feedback-title">Остались вопросы?</div>
+            <div class="footer__feedback-subtitle">Оставьте заявку на консультацию</div>
+            <form class="footer__feedback-form" action="">
+              <div class="footer__feedback-form-inputs">
+                <input class="footer__feedback-form-input" type="text" placeholder="ФИО">
+                <input class="footer__feedback-form-input" type="tel" placeholder="Номер">
+              </div>
+              <button class="footer__feedback-form-submit" type="submit">Отправить заявку</button>
+            </form>
+          </div>
+        </div>
+      </footer>
+      <!-- /footer -->
+
+    </div>
+
+    <script type="module" src="/src/js/main.js"></script>
+
   </body>
 </html>
