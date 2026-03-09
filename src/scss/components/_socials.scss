@@ -1,0 +1,26 @@
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  &__item {
+    width: 1.4583rem;
+    height: 1.4583rem;
+    transition: 0.2s all;
+    img {
+      @extend %contain-image;
+    }
+    &:hover {
+      transform: scale(1.1) rotate(7deg);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .socials {
+    gap: 1.25rem;
+    &__item {
+      width: 2.916667rem;
+      height: 2.916667rem;
+    }
+  } 
+}

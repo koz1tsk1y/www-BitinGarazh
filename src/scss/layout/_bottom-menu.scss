@@ -1,0 +1,44 @@
+@media (min-width: 769px) {
+    .bottom-menu {
+        display: none;
+    }
+}
+
+.bottom-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 80;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 0.833rem rgba(0 0 0 / 0.1);
+    &__container {
+        padding-top: 0.8333rem;
+        padding-bottom: 0.8333rem;
+    }
+    &__actions {
+        gap: 1rem;
+        justify-content: space-between;
+        overflow: auto;
+        .actions__item {
+            &-icon {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+            &-title {
+                font-size: 0.6667rem;
+            }
+            &--active {
+                .actions__item-title {
+                    color: $primaryColor;
+                }
+                svg path[fill] {
+                    fill: $primaryColor;
+                }
+                svg path[stroke] {
+                    stroke: $primaryColor;
+                }
+            }
+        }
+    }
+}

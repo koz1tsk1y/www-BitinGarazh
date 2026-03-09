@@ -1,0 +1,110 @@
+.auth-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background: rgba(0 0 0 / 0.6);
+    backdrop-filter: blur(0.15rem);
+    transition: 0.3s all;
+    &:not(&--login, &--registration) {
+        opacity: 0;
+        visibility: hidden;
+    }
+    &:not(&--login) &__login,
+    &:not(&--registration) &__registration {
+        transform: scale(0.9) translate(-50%, -50%);
+        opacity: 0;
+        visibility: hidden;
+    }
+    &__login,
+    &__registration {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        max-width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translate(-50%, -50%);
+        transition: 0.3s all;
+    }
+    &__body {
+        width: 41.6667rem;
+        padding: 1.6667rem 1.6667rem 4.5833rem;
+        background: #fff;
+        border-radius: 0.8333rem;
+    }
+    &__title {
+        margin: 0.2083rem 0 1.25rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    &__input {
+        padding: 0.8333rem;
+        background: #e9e9e9;
+        border: 0.04167rem solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.42rem;
+        font-size: 0.83rem;
+        transition: 0.2s all;
+        &:focus, &:active {
+            outline: none;
+            box-shadow: 0 0 0.41667rem rgba(0, 0, 0, 0.2);
+        }
+    }
+    &__submit {
+        width: 100%;
+        margin-top: 1.25rem;
+        padding: 0.8333rem;
+        font-size: 0.83rem;
+        font-weight: 500;
+    }
+    &__text {
+        font-size: 0.83rem;
+        opacity: 0.5;
+        text-align: center;
+        &:not(:first-child) {
+            margin-top: 1.25rem;
+        }
+        span[data-auth-login],
+        span[data-auth-registration] {
+            text-decoration: underline;
+            cursor: pointer;
+            transition: 0.2s all;
+            &:hover {
+                color: $primaryColor;
+            }
+        }
+    }
+    &__close {
+        position: absolute;
+        top: 2rem;
+        right: 1.6667rem;
+        width: 1.29167rem;
+        height: 1.29167rem;
+        background: url("data:image/svg+xml,%3Csvg width='31' height='31' viewBox='0 0 31 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='28.2844' y='30.4056' width='40' height='3' rx='1.5' transform='rotate(-135 28.2844 30.4056)' fill='black' /%3E%3Crect width='40' height='3' rx='1.5' transform='matrix(0.707107 -0.707107 -0.707107 -0.707107 2.12134 30.4056)' fill='black' /%3E%3C/svg%3E") no-repeat center / contain;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    .auth-popup {
+        &__body {
+            padding: 2.5rem 1.6667rem;
+            border-radius: 1.6666rem;
+        }
+        &__title {
+            margin-top: 1rem;
+        }
+        &__inputs {
+            gap: 0.75rem;
+        }
+    }
+}

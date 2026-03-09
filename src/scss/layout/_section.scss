@@ -1,0 +1,98 @@
+.section {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  &__title {
+    font-size: 2rem;
+    font-weight: 500;
+    span {
+      color: $primaryColor;
+    }
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+    &--big {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    .section__title {
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+  }
+  &__anons {
+    padding-right: 0.75rem;
+    background: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.68192 7.77766L1.53616 14L-2.1759e-06 12.4447L5.37767 7L-2.71939e-07 1.55531L1.53617 2.68592e-07L7.68192 6.22234C7.88559 6.42861 8 6.70834 8 7C8 7.29166 7.88559 7.57139 7.68192 7.77766Z' fill='%23FF4040' /%3E%3C/svg%3E") no-repeat right center / 0.333rem 0.5833rem;
+    font-weight: 500;
+    line-height: 140%;
+    color: $primaryColor;
+    transition: 0.2s all;
+    &:hover {
+      color: $darkenPrimaryColor;
+    }
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.79167rem;
+    .section__title {
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+    .section__text {
+      max-width: 15.3333rem;
+      font-size: 0.8333rem;
+    }
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-top: 1.6667rem;
+    padding-bottom: 1.6667rem;
+    &__title {
+      font-size: 1.66667rem;
+      &:not(:last-child) {
+        margin-bottom: 1.66667rem;
+      }
+      &--big {
+        font-size: 1.66667rem;
+      }
+    }
+    &__anons {
+      display: none;
+    }
+    &__header {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1.6667rem;
+      .section__title {
+        &:not(:last-child) {
+          margin-bottom: 0;
+        }
+      }
+      .section__text {
+        max-width: 100%;
+        font-size: 1rem;
+        line-height: 130%;
+      }
+      &:not(:last-child) {
+        margin-bottom: 1.66667rem;
+      }
+    }
+  }
+}

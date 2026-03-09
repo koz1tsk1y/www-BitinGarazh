@@ -1,0 +1,167 @@
+.footer {
+  margin-top: 2.91667rem;
+  &__container {
+    padding-top: 1.6667rem;
+    padding-bottom: 1.6667rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem;
+    border-top: 0.04167rem solid $primaryColor;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.833rem;
+  }
+  &__logo {
+    width: 4.0833rem;
+    height: 4.0833rem;
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+  &__contact {
+    font-size: 0.83rem;
+    transition: 0.2s all;
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+  &__menu {
+    max-width: 12.79167rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    &-title {
+      font-weight: 500;
+    }
+  }
+  &__nav {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem;
+    }
+    &-link {
+      font-size: 0.83rem;
+      transition: 0.2s all;
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+  }
+  &__feedback {
+    width: 15.041667rem;
+    &-title {
+      font-size: 1rem;
+      font-weight: 500;
+      color: $primaryColor;
+      &:not(:last-child) {
+        margin-bottom: 0.41667rem;
+      }
+    }
+    &-subtitle {
+      font-size: 0.67rem;
+      &:not(:last-child) {
+        margin-bottom: 0.833rem;
+      }
+    }
+    &-form {
+      &-inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 0.833rem;
+      }
+      &-input {
+        padding-bottom: 0.41667rem;
+        border-bottom: 0.04167rem solid #000;
+        font-size: 0.67rem;
+        transition: 0.3s all;
+        &:focus, &:active {
+          outline: none;
+          border-bottom-color: $primaryColor;
+        }
+      }
+      &-submit {
+        width: 100%;
+        font-weight: 500;
+        &:not(:first-child) {
+          margin-top: 0.8333rem;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 2.5rem;
+    &__container {
+      flex-direction: column;
+      gap: 1.6667rem;
+      border-top-width: 0.0833rem;
+    }
+    &__info {
+      gap: 1.25rem;
+    }
+    &__logo {
+      width: 5.6667rem;
+      height: 5.6667rem;
+    }
+    &__contacts {
+      gap: 1.25rem;
+    }
+    &__contact {
+      font-size: 1.16667rem;
+    }
+    &__menu {
+      max-width: 100%;
+      gap: 1.25rem;
+      &-title {
+        font-size: 1.6667rem;
+      }
+    }
+    &__nav {
+      &-list {
+        gap: 1.25rem;
+      }
+      &-link {
+        font-size: 1.1667rem;
+      }
+    }
+    &__feedback {
+      width: auto;
+      &-title {
+        font-size: 1.6667rem;
+        &:not(:last-child) {
+          margin-bottom: 0.5833rem;
+        }
+      }
+      &-subtitle {
+        font-size: 1rem;
+        &:not(:last-child) {
+          margin-bottom: 1.25rem;
+        }
+      }
+      &-form {
+        &-inputs {
+          gap: 1.25rem;
+        }
+        &-input {
+          padding-bottom: 0.833rem;
+          border-bottom-width: 0.0833rem;
+          font-size: 1.1667rem;
+        }
+        &-submit {
+          &:not(:first-child) {
+            margin-top: 1.25rem;
+          }
+        }
+      }
+    }
+  }
+}

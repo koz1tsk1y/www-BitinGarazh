@@ -2,9 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>fff</title>
+    <title>Батин гараж - товары для авто</title>
   </head>
   <body>
     
@@ -12,9 +12,9 @@
 
       <header class="header">
         <div class="header__container container">
-          <div class="header__logo">
+          <a class="header__logo logo" href="/">
             <img src="public/images/logo.svg" alt="Батин гараж">
-          </div>
+          </a>
           <div class="header__inner">
             <div class="header__top">
               <nav class="header__nav">
@@ -33,12 +33,12 @@
                   </li>
                 </ul>
               </nav>
-              <div class="header__region region">
-                <div class="region__title">Регион</div>
-                <ul class="region__list">
-                  <li class="region__list-item region__list-item--active">Россия</li>
-                  <li class="region__list-item">Казахстан</li>
-                  <li class="region__list-item">Беларусь</li>
+              <div class="header__region custom-select">
+                <div class="custom-select__title">Регион</div>
+                <ul class="custom-select__list">
+                  <li class="custom-select__list-item custom-select__list-item--active">Россия</li>
+                  <li class="custom-select__list-item">Казахстан</li>
+                  <li class="custom-select__list-item">Беларусь</li>
                 </ul>
               </div>
               <div class="header__contacts">
@@ -49,57 +49,69 @@
               <div class="header__catalog">
                 <div class="header__catalog-btn">Каталог</div>
                 <div class="header__catalog-body">
-                  <div class="header__catalog-title"></div>
-                  <div class="header__catalog-tabs tabs">
-                    <div class="tabs__btns">
-                      <button class="tabs__btn btn tabs__btn--active">Легковые</button>
-                      <button class="tabs__btn btn">Грузовые</button>
-                    </div>
-                    <div class="tabs__items">
-                      <div class="tabs__item tabs__item--active">
-                        <div class="header__catalog-links">
-                          <a class="header__catalog-link" href="#">Audi</a>
-                          <a class="header__catalog-link" href="#">Citroen</a>
-                          <a class="header__catalog-link" href="#">JETOUR</a>
-                          <a class="header__catalog-link" href="#">Mitsubishi</a>
-                          <a class="header__catalog-link" href="#">Skoda</a>
-                          <a class="header__catalog-link" href="#">BMW</a>
-                          <a class="header__catalog-link" href="#">Daewoo</a>
-                          <a class="header__catalog-link" href="#">Jaecoo</a>
-                          <a class="header__catalog-link" href="#">Nissan</a>
-                          <a class="header__catalog-link" href="#">TENET</a>
-                          <a class="header__catalog-link" href="#">Belgee</a>
-                          <a class="header__catalog-link" href="#">Ford</a>
-                          <a class="header__catalog-link" href="#">Kia</a>
-                          <a class="header__catalog-link" href="#">Omoda</a>
-                          <a class="header__catalog-link" href="#">Toyota</a>
-                          <a class="header__catalog-link" href="#">Changan</a>
-                          <a class="header__catalog-link" href="#">Geely</a>
-                          <a class="header__catalog-link" href="#">Land Rover</a>
-                          <a class="header__catalog-link" href="#">Opel</a>
-                          <a class="header__catalog-link" href="#">Volkswagen</a>
-                          <a class="header__catalog-link" href="#">Chery</a>
-                          <a class="header__catalog-link" href="#">Haval</a>
-                          <a class="header__catalog-link" href="#">Lexus</a>
-                          <a class="header__catalog-link" href="#">Peugeot</a>
-                          <a class="header__catalog-link" href="#">Volvo</a>
-                          <a class="header__catalog-link" href="#">Chevrolet</a>
-                          <a class="header__catalog-link" href="#">Honda</a>
-                          <a class="header__catalog-link" href="#">Mazda</a>
-                          <a class="header__catalog-link" href="#">Porsche</a>
-                          <a class="header__catalog-link" href="#">Voyah</a>
-                          <a class="header__catalog-link" href="#">LADA</a>
-                          <a class="header__catalog-link" href="#">Hyundai</a>
-                          <a class="header__catalog-link" href="#">Mercedes-Benz</a>
-                          <a class="header__catalog-link" href="#">Renault</a>
-                        </div>
+                  <div class="header__catalog-body-inner">
+                    <!-- <div class="header__catalog-title">Каталог</div> -->
+                    <div class="header__catalog-tabs tabs">
+                      <div class="tabs__btns">
+                        <button class="tabs__btn btn tabs__btn--active">Легковые</button>
+                        <button class="tabs__btn btn">Грузовые</button>
                       </div>
-                      <div class="tabs__item">
-                        <div class="header__catalog-links">
-                          <a class="header__catalog-link" href="#">Audi</a>
-                          <a class="header__catalog-link" href="#">Citroen</a>
-                          <a class="header__catalog-link" href="#">JETOUR</a>
-                          <a class="header__catalog-link" href="#">Mitsubishi</a>
+                      <div class="tabs__items">
+                        <div class="tabs__item tabs__item--active">
+                          <div class="header__catalog-links">
+                            <a class="header__catalog-link" href="#">Audi</a>
+                            <a class="header__catalog-link" href="#">Citroen</a>
+                            <a class="header__catalog-link" href="#">JETOUR</a>
+                            <a class="header__catalog-link" href="#">Mitsubishi</a>
+                            <a class="header__catalog-link" href="#">Skoda</a>
+                            <a class="header__catalog-link" href="#">BMW</a>
+                            <a class="header__catalog-link" href="#">Daewoo</a>
+                            <a class="header__catalog-link" href="#">Jaecoo</a>
+                            <a class="header__catalog-link" href="#">Nissan</a>
+                            <a class="header__catalog-link" href="#">TENET</a>
+                            <a class="header__catalog-link" href="#">Belgee</a>
+                            <a class="header__catalog-link" href="#">Ford</a>
+                            <a class="header__catalog-link" href="#">Kia</a>
+                            <a class="header__catalog-link" href="#">Omoda</a>
+                            <a class="header__catalog-link" href="#">Toyota</a>
+                            <a class="header__catalog-link" href="#">Changan</a>
+                            <a class="header__catalog-link" href="#">Geely</a>
+                            <a class="header__catalog-link" href="#">Land Rover</a>
+                            <a class="header__catalog-link" href="#">Opel</a>
+                            <a class="header__catalog-link" href="#">Volkswagen</a>
+                            <a class="header__catalog-link" href="#">Chery</a>
+                            <a class="header__catalog-link" href="#">Haval</a>
+                            <a class="header__catalog-link" href="#">Lexus</a>
+                            <a class="header__catalog-link" href="#">Peugeot</a>
+                            <a class="header__catalog-link" href="#">Volvo</a>
+                            <a class="header__catalog-link" href="#">Chevrolet</a>
+                            <a class="header__catalog-link" href="#">Honda</a>
+                            <a class="header__catalog-link" href="#">Mazda</a>
+                            <a class="header__catalog-link" href="#">Porsche</a>
+                            <a class="header__catalog-link" href="#">Voyah</a>
+                            <a class="header__catalog-link" href="#">LADA</a>
+                            <a class="header__catalog-link" href="#">Hyundai</a>
+                            <a class="header__catalog-link" href="#">Mercedes-Benz</a>
+                            <a class="header__catalog-link" href="#">Renault</a>
+                            <a class="header__catalog-link" href="#">Porsche</a>
+                            <a class="header__catalog-link" href="#">Voyah</a>
+                            <a class="header__catalog-link" href="#">LADA</a>
+                            <a class="header__catalog-link" href="#">Hyundai</a>
+                            <a class="header__catalog-link" href="#">Mercedes-Benz</a>
+                            <a class="header__catalog-link" href="#">Renault</a>
+                            <span class="header__catalog-spoiler">
+                              <span>Все марки</span>
+                              <span>Свернуть</span>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="tabs__item">
+                          <div class="header__catalog-links">
+                            <a class="header__catalog-link" href="#">Audi</a>
+                            <a class="header__catalog-link" href="#">Citroen</a>
+                            <a class="header__catalog-link" href="#">JETOUR</a>
+                            <a class="header__catalog-link" href="#">Mitsubishi</a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -113,24 +125,36 @@
               <div class="header__actions actions">
                 <div class="actions__item">
                   <div class="actions__item-icon">
-                    <img src="public/images/car.svg" alt="Автомобиль">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                      <path d="M27 19.2775V23.125C27 23.7075 27 23.9987 26.905 24.2287C26.7779 24.5344 26.5347 24.7772 26.2287 24.9038C25.9987 25 25.7075 25 25.125 25C24.5425 25 24.2513 25 24.0213 24.905C23.7156 24.7779 23.4728 24.5347 23.3462 24.2287C23.25 23.9987 23.25 23.7075 23.25 23.125C23.25 22.5425 23.25 22.2513 23.155 22.0213C23.0279 21.7156 22.7847 21.4728 22.4787 21.3462C22.2487 21.25 21.9575 21.25 21.375 21.25H7.625C7.0425 21.25 6.75125 21.25 6.52125 21.345C6.21558 21.4721 5.97282 21.7153 5.84625 22.0213C5.75 22.2513 5.75 22.5425 5.75 23.125C5.75 23.7075 5.75 23.9987 5.655 24.2287C5.52786 24.5344 5.28466 24.7772 4.97875 24.9038C4.74875 25 4.4575 25 3.875 25C3.2925 25 3.00125 25 2.77125 24.905C2.46558 24.7779 2.22282 24.5347 2.09625 24.2287C2 23.9987 2 23.7075 2 23.125V19.2775C2 17.775 2 17.0238 2.215 16.315C2.43 15.6063 2.84625 14.9812 3.68 13.7312L4.5 12.5L5.7025 9.615C6.63375 7.3775 7.1 6.26 8.045 5.63C8.99 5 10.2 5 12.625 5H16.375C18.7988 5 20.01 5 20.955 5.63C21.9 6.26 22.3663 7.37875 23.2975 9.615L24.5 12.5L25.32 13.7312C26.1538 14.9812 26.57 15.6063 26.785 16.315C27 17.0238 27 17.775 27 19.2775Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M2 10.625L4.5 12.5L6.70125 13.05C6.90125 13.1 7.10333 13.125 7.3075 13.125H21.6925C21.8967 13.125 22.0988 13.1 22.2988 13.05L24.5 12.5L27 10.625" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M22 17.5V17.5125M7 17.5V17.5125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                   </div>
                   <div class="actions__item-title">Гараж</div>
                 </div>
                 <div class="actions__item">
                   <div class="actions__item-icon">
-                    <img src="public/images/box.svg" alt="Ящик">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                      <path d="M15 15L25.0912 9.21875M15 15V26.5625M15 15L9.95375 12.11M25.0912 9.21875C24.7411 8.6176 24.2389 8.11923 23.635 7.77375L20.3125 5.87M25.0912 9.21875C25.435 9.80875 25.625 10.4875 25.625 11.1937V18.8062C25.6246 19.5012 25.4403 20.1837 25.0908 20.7844C24.7413 21.385 24.239 21.8825 23.635 22.2262L16.99 26.0337C16.3842 26.3806 15.6981 26.5629 15 26.5625M15 26.5625C14.3019 26.5629 13.6158 26.3806 13.01 26.0337L6.365 22.2262C5.13375 21.5212 4.375 20.2187 4.375 18.8062V11.1937C4.37482 10.4999 4.55856 9.81844 4.9075 9.21875M9.95375 12.11L4.9075 9.21875M9.95375 12.11L20.3125 5.87M20.3125 5.87L16.99 3.96625C16.3843 3.61888 15.6982 3.4361 15 3.4361C14.3018 3.4361 13.6157 3.61888 13.01 3.96625L6.365 7.77375C5.76069 8.11905 5.258 8.61744 4.9075 9.21875" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
+                    </svg>
                   </div>
                   <div class="actions__item-title">Заказы</div>
                 </div>
                 <div class="actions__item">
                   <div class="actions__item-icon">
-                    <img src="public/images/car.svg" alt="Корзина">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                      <path d="M12.5 25.625C13.5355 25.625 14.375 24.7855 14.375 23.75C14.375 22.7145 13.5355 21.875 12.5 21.875C11.4645 21.875 10.625 22.7145 10.625 23.75C10.625 24.7855 11.4645 25.625 12.5 25.625Z" stroke="black" stroke-width="1.5"/>
+                      <path d="M21.25 25.625C22.2855 25.625 23.125 24.7855 23.125 23.75C23.125 22.7145 22.2855 21.875 21.25 21.875C20.2145 21.875 19.375 22.7145 19.375 23.75C19.375 24.7855 20.2145 25.625 21.25 25.625Z" stroke="black" stroke-width="1.5"/>
+                      <path d="M4.375 5H6.875L11.255 18.75H21.25" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M10.28 15.625L7.875 8.125H23.5087C23.6078 8.12488 23.7055 8.14831 23.7938 8.19338C23.882 8.23844 23.9583 8.30384 24.0163 8.38418C24.0743 8.46452 24.1123 8.5575 24.1273 8.65544C24.1423 8.75339 24.1338 8.85349 24.1025 8.9475L22.0187 15.1975C21.9773 15.3219 21.8978 15.4301 21.7915 15.5068C21.6851 15.5836 21.5574 15.6249 21.4263 15.625H10.28Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                   </div>
                   <div class="actions__item-title">Корзина</div>
                 </div>
               </div>
-              <button class="header__login login-btn btn" data-login>Вход</button>
+              <button class="header__login login-btn btn" data-auth-login>Вход</button>
+              <button class="header__burger-btn"></button>
             </div>
           </div>
         </div>
@@ -139,20 +163,50 @@
 
       <main class="main">
 
-        <section class="hero-section">
+        <section class="hero-section section">
           <div class="hero-section__container container">
             <div class="hero-section__slider swiper">
               <div class="swiper-wrapper">
                 <div class="hero-section__slide swiper-slide">
-                  <div class="hero-section__slide-content">
-                    <div class="hero-section__slide-title">Фильтры для авто со скидкой до 20%</div>
-                    <div class="hero-section__slide-text">
-                      <p>Меняйте фильтры вовремя — экономьте на ремонте двигателя</p>
+                  <div class="hero-section__slide-inner">
+                    <div class="hero-section__slide-content">
+                      <div class="hero-section__slide-title">Фильтры для авто со скидкой до 20%</div>
+                      <div class="hero-section__slide-text">
+                        <p>Меняйте фильтры вовремя — экономьте на ремонте двигателя</p>
+                      </div>
+                      <a class="hero-section__slide-btn btn" href="#">В каталог</a>
                     </div>
-                    <a class="hero-section__slide-btn btn" href="#">В каталог</a>
+                    <div class="hero-section__slide-image">
+                      <img src="public/images/banner1.jpg" alt="Фильтры для авто со скидкой до 20%">
+                    </div>
                   </div>
-                  <div class="hero-section__slide-image">
-                    <img src="public/images/banner1.jpg" alt="Фильтры для авто со скидкой до 20%">
+                </div>
+                <div class="hero-section__slide swiper-slide">
+                  <div class="hero-section__slide-inner">
+                    <div class="hero-section__slide-content">
+                      <div class="hero-section__slide-title">Фильтры для авто со скидкой до 20%</div>
+                      <div class="hero-section__slide-text">
+                        <p>Меняйте фильтры вовремя — экономьте на ремонте двигателя</p>
+                      </div>
+                      <a class="hero-section__slide-btn btn" href="#">В каталог</a>
+                    </div>
+                    <div class="hero-section__slide-image">
+                      <img src="public/images/banner1.jpg" alt="Фильтры для авто со скидкой до 20%">
+                    </div>
+                  </div>
+                </div>
+                <div class="hero-section__slide swiper-slide">
+                  <div class="hero-section__slide-inner">
+                    <div class="hero-section__slide-content">
+                      <div class="hero-section__slide-title">Фильтры для авто со скидкой до 20%</div>
+                      <div class="hero-section__slide-text">
+                        <p>Меняйте фильтры вовремя — экономьте на ремонте двигателя</p>
+                      </div>
+                      <a class="hero-section__slide-btn btn" href="#">В каталог</a>
+                    </div>
+                    <div class="hero-section__slide-image">
+                      <img src="public/images/banner1.jpg" alt="Фильтры для авто со скидкой до 20%">
+                    </div>
                   </div>
                 </div>
               </div>
@@ -169,7 +223,49 @@
               <a class="categories__item" href="#">
                 <div class="categories__item-title">Оригинальные запчасти</div>
                 <div class="categories__item-image">
-                  <img src="public/images/cat-image.jpg" alt="Оригинальные запчасти">
+                  <img src="public/images/cat-image.png" alt="Оригинальные запчасти">
+                </div>
+              </a>
+              <a class="categories__item" href="#">
+                <div class="categories__item-title">Оригинальные запчасти</div>
+                <div class="categories__item-image">
+                  <img src="public/images/cat-image.png" alt="Оригинальные запчасти">
+                </div>
+              </a>
+              <a class="categories__item" href="#">
+                <div class="categories__item-title">Оригинальные запчасти</div>
+                <div class="categories__item-image">
+                  <img src="public/images/cat-image.png" alt="Оригинальные запчасти">
+                </div>
+              </a>
+              <a class="categories__item" href="#">
+                <div class="categories__item-title">Оригинальные запчасти</div>
+                <div class="categories__item-image">
+                  <img src="public/images/cat-image.png" alt="Оригинальные запчасти">
+                </div>
+              </a>
+              <a class="categories__item" href="#">
+                <div class="categories__item-title">Оригинальные запчасти</div>
+                <div class="categories__item-image">
+                  <img src="public/images/cat-image.png" alt="Оригинальные запчасти">
+                </div>
+              </a>
+              <a class="categories__item" href="#">
+                <div class="categories__item-title">Оригинальные запчасти</div>
+                <div class="categories__item-image">
+                  <img src="public/images/cat-image.png" alt="Оригинальные запчасти">
+                </div>
+              </a>
+              <a class="categories__item" href="#">
+                <div class="categories__item-title">Оригинальные запчасти</div>
+                <div class="categories__item-image">
+                  <img src="public/images/cat-image.png" alt="Оригинальные запчасти">
+                </div>
+              </a>
+              <a class="categories__item" href="#">
+                <div class="categories__item-title">Оригинальные запчасти</div>
+                <div class="categories__item-image">
+                  <img src="public/images/cat-image.png" alt="Оригинальные запчасти">
                 </div>
               </a>
             </div>
@@ -180,62 +276,49 @@
         <section class="products-section section">
           <div class="container">
             <h2 class="section__title">Запчасти для ТО</h2>
-            <div class="products swiper">
-              <div class="swiper-wrapper">
-                <div class="products__item swiper-slide">
-                  <div class="products__item-image">
-                    <img src="public/images/product-image.jpg" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
-                  </div>
+            <div class="products">
+              <div class="products__items">
+                <div class="products__item">
+                  <a class="products__item-image" href="#">
+                    <img src="public/images/product-image.png" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
+                  </a>
                   <small class="products__item-model">Артикул: 111111111111111111111111</small>
-                  <p class="products__item-title">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</p>
+                  <a class="products__item-title" href="#">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</a>
                   <span class="products__item-price">10 000 000 ₽</span>
                   <button class="products__item-btn btn">В корзину</button>
                   <button class="products__item-favorite"></button>
                 </div>
-                <div class="products__item swiper-slide">
-                  <div class="products__item-image">
-                    <img src="public/images/product-image.jpg" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
-                  </div>
+                <div class="products__item">
+                  <a class="products__item-image" href="#">
+                    <img src="public/images/product-image.png" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
+                  </a>
                   <small class="products__item-model">Артикул: 111111111111111111111111</small>
-                  <p class="products__item-title">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</p>
+                  <a class="products__item-title" href="#">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</a>
                   <span class="products__item-price">10 000 000 ₽</span>
                   <button class="products__item-btn btn">В корзину</button>
                   <button class="products__item-favorite"></button>
                 </div>
-                <div class="products__item swiper-slide">
-                  <div class="products__item-image">
-                    <img src="public/images/product-image.jpg" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
-                  </div>
+                <div class="products__item">
+                  <a class="products__item-image" href="#">
+                    <img src="public/images/product-image.png" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
+                  </a>
                   <small class="products__item-model">Артикул: 111111111111111111111111</small>
-                  <p class="products__item-title">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</p>
+                  <a class="products__item-title" href="#">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</a>
                   <span class="products__item-price">10 000 000 ₽</span>
                   <button class="products__item-btn btn">В корзину</button>
                   <button class="products__item-favorite"></button>
                 </div>
-                <div class="products__item swiper-slide">
-                  <div class="products__item-image">
-                    <img src="public/images/product-image.jpg" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
-                  </div>
+                <div class="products__item">
+                  <a class="products__item-image" href="#">
+                    <img src="public/images/product-image.png" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
+                  </a>
                   <small class="products__item-model">Артикул: 111111111111111111111111</small>
-                  <p class="products__item-title">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</p>
-                  <span class="products__item-price">10 000 000 ₽</span>
-                  <button class="products__item-btn btn">В корзину</button>
-                  <button class="products__item-favorite"></button>
-                </div>
-                <div class="products__item swiper-slide">
-                  <div class="products__item-image">
-                    <img src="public/images/product-image.jpg" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
-                  </div>
-                  <small class="products__item-model">Артикул: 111111111111111111111111</small>
-                  <p class="products__item-title">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</p>
+                  <a class="products__item-title" href="#">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</a>
                   <span class="products__item-price">10 000 000 ₽</span>
                   <button class="products__item-btn btn">В корзину</button>
                   <button class="products__item-favorite"></button>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
             </div>
           </div>
         </section>
@@ -244,26 +327,26 @@
         <section class="about-section section">
           <div class="about-section__container container">
             <div class="section__header">
-              <h2 class="section__title"><span>Батин Гараж</span> - лучший выбор для профессионалов и любителей</h2>
+              <h2 class="section__title section__title--big"><span>Батин Гараж</span> - лучший выбор для профессионалов и любителей</h2>
               <div class="section__text">
                 <p>Мы - ведущая компания на рынке автозапчастей, с опытом более 10 лет, благодаря нам миллионы клиентов сэкономили деньги и получили наилучший сервис,</p>
               </div>
             </div>
             <div class="highlights">
               <div class="highlights__item">
-                <span class="highlights__item-title"> 3500</span>
+                <span class="highlights__item-title">&#62; 3500</span>
                 <span class="highlights__item-description">брендов</span>
               </div>
               <div class="highlights__item">
-                <span class="highlights__item-title"> 22 млн</span>
+                <span class="highlights__item-title">&#62; 22 млн</span>
                 <span class="highlights__item-description">товаров</span>
               </div>
               <div class="highlights__item">
-                <span class="highlights__item-title"> 6 млн</span>
+                <span class="highlights__item-title">&#62; 6 млн</span>
                 <span class="highlights__item-description">клиентов</span>
               </div>
               <div class="highlights__item">
-                <span class="highlights__item-title"> 1200</span>
+                <span class="highlights__item-title">&#62; 1200</span>
                 <span class="highlights__item-description">поставщиков</span>
               </div>
             </div>
@@ -273,63 +356,53 @@
 
         <section class="products-section section">
           <div class="container">
-            <h2 class="section__title">Товары с уценкой</h2>
-            <div class="products swiper">
-              <div class="swiper-wrapper">
-                <div class="products__item swiper-slide">
-                  <div class="products__item-image">
-                    <img src="public/images/product-image.jpg" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
-                  </div>
+            <div class="section__top">
+              <h2 class="section__title">Товары с уценкой</h2>
+              <a class="section__anons" href="#">Все товары</a>
+            </div>
+            <div class="products">
+              <div class="products__items">
+                <div class="products__item">
+                  <a class="products__item-image" href="#">
+                    <img src="public/images/product-image.png" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
+                  </a>
                   <small class="products__item-model">Артикул: 111111111111111111111111</small>
-                  <p class="products__item-title">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</p>
+                  <a class="products__item-title" href="#">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</a>
                   <span class="products__item-price">10 000 000 ₽ <small>10 000 000 ₽</small></span>
                   <button class="products__item-btn btn">В корзину</button>
                   <button class="products__item-favorite"></button>
                 </div>
-                <div class="products__item swiper-slide">
-                  <div class="products__item-image">
-                    <img src="public/images/product-image.jpg" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
-                  </div>
+                <div class="products__item">
+                  <a class="products__item-image" href="#">
+                    <img src="public/images/product-image.png" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
+                  </a>
                   <small class="products__item-model">Артикул: 111111111111111111111111</small>
-                  <p class="products__item-title">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</p>
+                  <a class="products__item-title" href="#">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</a>
                   <span class="products__item-price">10 000 000 ₽ <small>10 000 000 ₽</small></span>
                   <button class="products__item-btn btn">В корзину</button>
                   <button class="products__item-favorite"></button>
                 </div>
-                <div class="products__item swiper-slide">
-                  <div class="products__item-image">
-                    <img src="public/images/product-image.jpg" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
-                  </div>
+                <div class="products__item">
+                  <a class="products__item-image" href="#">
+                    <img src="public/images/product-image.png" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
+                  </a>
                   <small class="products__item-model">Артикул: 111111111111111111111111</small>
-                  <p class="products__item-title">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</p>
+                  <a class="products__item-title" href="#">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</a>
                   <span class="products__item-price">10 000 000 ₽ <small>10 000 000 ₽</small></span>
                   <button class="products__item-btn btn">В корзину</button>
                   <button class="products__item-favorite"></button>
                 </div>
-                <div class="products__item swiper-slide">
-                  <div class="products__item-image">
-                    <img src="public/images/product-image.jpg" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
-                  </div>
+                <div class="products__item">
+                  <a class="products__item-image" href="#">
+                    <img src="public/images/product-image.png" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
+                  </a>
                   <small class="products__item-model">Артикул: 111111111111111111111111</small>
-                  <p class="products__item-title">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</p>
-                  <span class="products__item-price">10 000 000 ₽ <small>10 000 000 ₽</small></span>
-                  <button class="products__item-btn btn">В корзину</button>
-                  <button class="products__item-favorite"></button>
-                </div>
-                <div class="products__item swiper-slide">
-                  <div class="products__item-image">
-                    <img src="public/images/product-image.jpg" alt="Задний верхний рычаг передней правой подвески Mercedes Actros 2653">
-                  </div>
-                  <small class="products__item-model">Артикул: 111111111111111111111111</small>
-                  <p class="products__item-title">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</p>
+                  <a class="products__item-title" href="#">Задний верхний рычаг передней правой подвески Mercedes Actros 2653</a>
                   <span class="products__item-price">10 000 000 ₽ <small>10 000 000 ₽</small></span>
                   <button class="products__item-btn btn">В корзину</button>
                   <button class="products__item-favorite"></button>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
             </div>
           </div>
         </section>
@@ -359,7 +432,7 @@
       <!-- /main -->
 
       <footer class="footer">
-        <div class="footer__container">
+        <div class="footer__container container">
           <div class="footer__info">
             <a class="footer__logo" href="/">
               <img src="public/images/logo.svg" alt="Батин гараж">
@@ -370,10 +443,10 @@
               <address><a class="footer__contact" href="https://yandex.by/maps/-/CPuXYYYU" target="_blank">Ул. Пушкина д. 15</a></address>
             </div>
             <div class="footer__socials socials">
-              <a class="social__item" href="#">
+              <a class="socials__item" href="#">
                 <img src="public/images/vk.svg" alt="vk">
               </a>
-              <a class="social__item" href="#">
+              <a class="socials__item" href="#">
                 <img src="public/images/tg.svg" alt="telegram">
               </a>
             </div>
@@ -433,13 +506,97 @@
                 <input class="footer__feedback-form-input" type="text" placeholder="ФИО">
                 <input class="footer__feedback-form-input" type="tel" placeholder="Номер">
               </div>
-              <button class="footer__feedback-form-submit" type="submit">Отправить заявку</button>
+              <button class="footer__feedback-form-submit btn" type="submit">Отправить заявку</button>
             </form>
           </div>
         </div>
       </footer>
       <!-- /footer -->
 
+    </div>
+
+    <div class="bottom-menu">
+      <div class="bottom-menu__container container">
+        <div class="bottom-menu__actions actions">
+          <div class="actions__item actions__item--active">
+            <div class="actions__item-icon">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.1695 24.9368H7.46825C6.10475 24.9368 5 23.832 5 22.4685V15.2078C5.00083 14.6788 5.11468 14.1562 5.33393 13.6748C5.55317 13.1934 5.87275 12.7645 6.27125 12.4167L12.9425 6.60603C13.3917 6.21524 13.9671 6 14.5625 6C15.1579 6 15.7333 6.21524 16.1825 6.60603L22.8538 12.4178C23.2521 12.7655 23.5716 13.1943 23.7908 13.6754C24.0101 14.1566 24.124 14.679 24.125 15.2078V22.4685C24.125 23.123 23.8651 23.7506 23.4025 24.2135C22.9398 24.6763 22.3123 24.9365 21.6579 24.9368H18.2637V17.5332C18.2637 16.5117 17.4358 15.6825 16.4131 15.6825H13.0213C11.9986 15.6825 11.1706 16.5117 11.1706 17.5332L11.1695 24.9368ZM11.1695 24.9368H18.2649" stroke="black" stroke-width="1.3" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="actions__item-title">Главная</div>
+          </div>
+          <div class="actions__item">
+            <div class="actions__item-icon">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0064 6C12.7296 6.00011 11.4714 6.30554 10.3366 6.89082C9.20184 7.4761 8.2235 8.32425 7.48321 9.36452C6.74293 10.4048 6.26215 11.607 6.081 12.8708C5.89985 14.1347 6.02358 15.4235 6.44186 16.6298C6.86014 17.8361 7.56085 18.9249 8.48552 19.8054C9.41019 20.6858 10.532 21.3324 11.7574 21.6911C12.9828 22.0498 14.2762 22.1103 15.5297 21.8676C16.7832 21.6248 17.9605 21.0858 18.9633 20.2955L22.4036 23.7356C22.5812 23.9072 22.8192 24.0021 23.0662 24C23.3132 23.9978 23.5494 23.8988 23.7241 23.7241C23.8987 23.5495 23.9978 23.3132 24 23.0662C24.0021 22.8192 23.9072 22.5813 23.7356 22.4036L20.2953 18.9635C21.226 17.7829 21.8055 16.364 21.9675 14.8694C22.1295 13.3748 21.8674 11.8648 21.2112 10.5122C20.555 9.15955 19.5312 8.019 18.2571 7.22102C16.9829 6.42305 15.5099 5.9999 14.0064 6ZM7.88335 14.0068C7.88335 12.3829 8.52846 10.8256 9.67676 9.6773C10.8251 8.52904 12.3825 7.88396 14.0064 7.88396C15.6304 7.88396 17.1878 8.52904 18.3361 9.6773C19.4844 10.8256 20.1295 12.3829 20.1295 14.0068C20.1295 15.6307 19.4844 17.1881 18.3361 18.3363C17.1878 19.4846 15.6304 20.1297 14.0064 20.1297C12.3825 20.1297 10.8251 19.4846 9.67676 18.3363C8.52846 17.1881 7.88335 15.6307 7.88335 14.0068Z" fill="black" />
+              </svg>
+            </div>
+            <div class="actions__item-title">Поиск</div>
+          </div>
+          <div class="actions__item" data-auth-login="">
+            <div class="actions__item-icon">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.626 6.47649H7.25098C6.65424 6.47649 6.08194 6.71355 5.65999 7.1355C5.23803 7.55746 5.00098 8.12976 5.00098 8.72649V9.85149M10.626 24.4765H7.25098C6.65424 24.4765 6.08194 24.2394 5.65999 23.8175C5.23803 23.3955 5.00098 22.8232 5.00098 22.2265V21.1015M4.99985 15.4765H10.6249M10.6249 15.4765L8.37485 17.7265M10.6249 15.4765L8.37485 13.2265M23.6479 23.833L16.8979 25.858C16.5618 25.9589 16.2069 25.9797 15.8614 25.919C15.5158 25.8582 15.1893 25.7175 14.9078 25.5081C14.6264 25.2987 14.3978 25.0263 14.2403 24.7128C14.0829 24.3993 14.0009 24.0533 14.001 23.7025V7.25049C14.0009 6.89966 14.0829 6.55368 14.2403 6.24017C14.3978 5.92666 14.6264 5.65431 14.9078 5.44488C15.1893 5.23545 15.5158 5.09474 15.8614 5.03399C16.2069 4.97324 16.5618 4.99413 16.8979 5.09499L23.6479 7.11999C24.1113 7.25912 24.5176 7.54396 24.8064 7.93225C25.0952 8.32054 25.2511 8.79159 25.251 9.27549V21.6775C25.2511 22.1614 25.0952 22.6324 24.8064 23.0207C24.5176 23.409 24.1113 23.6939 23.6479 23.833Z" stroke="black" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="actions__item-title">Вход</div>
+          </div>
+          <div class="actions__item">
+            <div class="actions__item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <path d="M15 15L25.0912 9.21875M15 15V26.5625M15 15L9.95375 12.11M25.0912 9.21875C24.7411 8.6176 24.2389 8.11923 23.635 7.77375L20.3125 5.87M25.0912 9.21875C25.435 9.80875 25.625 10.4875 25.625 11.1937V18.8062C25.6246 19.5012 25.4403 20.1837 25.0908 20.7844C24.7413 21.385 24.239 21.8825 23.635 22.2262L16.99 26.0337C16.3842 26.3806 15.6981 26.5629 15 26.5625M15 26.5625C14.3019 26.5629 13.6158 26.3806 13.01 26.0337L6.365 22.2262C5.13375 21.5212 4.375 20.2187 4.375 18.8062V11.1937C4.37482 10.4999 4.55856 9.81844 4.9075 9.21875M9.95375 12.11L4.9075 9.21875M9.95375 12.11L20.3125 5.87M20.3125 5.87L16.99 3.96625C16.3843 3.61888 15.6982 3.4361 15 3.4361C14.3018 3.4361 13.6157 3.61888 13.01 3.96625L6.365 7.77375C5.76069 8.11905 5.258 8.61744 4.9075 9.21875" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="actions__item-title">Заказы</div>
+          </div>
+          <div class="actions__item">
+            <div class="actions__item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <path d="M12.5 25.625C13.5355 25.625 14.375 24.7855 14.375 23.75C14.375 22.7145 13.5355 21.875 12.5 21.875C11.4645 21.875 10.625 22.7145 10.625 23.75C10.625 24.7855 11.4645 25.625 12.5 25.625Z" stroke="black" stroke-width="1.5"/>
+                <path d="M21.25 25.625C22.2855 25.625 23.125 24.7855 23.125 23.75C23.125 22.7145 22.2855 21.875 21.25 21.875C20.2145 21.875 19.375 22.7145 19.375 23.75C19.375 24.7855 20.2145 25.625 21.25 25.625Z" stroke="black" stroke-width="1.5"/>
+                <path d="M4.375 5H6.875L11.255 18.75H21.25" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10.28 15.625L7.875 8.125H23.5087C23.6078 8.12488 23.7055 8.14831 23.7938 8.19338C23.882 8.23844 23.9583 8.30384 24.0163 8.38418C24.0743 8.46452 24.1123 8.5575 24.1273 8.65544C24.1423 8.75339 24.1338 8.85349 24.1025 8.9475L22.0187 15.1975C21.9773 15.3219 21.8978 15.4301 21.7915 15.5068C21.6851 15.5836 21.5574 15.6249 21.4263 15.625H10.28Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="actions__item-title">Корзина</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="auth-popup">
+      <div class="auth-popup__login">
+        <div class="auth-popup__body">
+          <button class="auth-popup__btn btn btn--dark" data-auth-registration>Регистрация</button>
+          <div class="auth-popup__title">Вход</div>
+          <form class="auth-popup__form" action="">
+            <div class="auth-popup__inputs">
+              <input class="auth-popup__input" type="text" placeholder="Логин, телефон, email">
+              <input class="auth-popup__input" type="password" placeholder="Пароль">
+            </div>
+            <button class="auth-popup__submit btn" type="submit">Войти</button>
+          </form>
+          <p class="auth-popup__text">Еще нет аккаунта? <span data-auth-registration>Зарегистрируйтесь сейчас</span></p>
+          <div class="auth-popup__close"></div>
+        </div>
+      </div>
+      <div class="auth-popup__registration">
+        <div class="auth-popup__body">
+          <button class="auth-popup__btn btn btn--dark" data-auth-login>Вход</button>
+          <div class="auth-popup__title">Регистрация</div>
+          <form class="auth-popup__form" action="">
+            <div class="auth-popup__inputs">
+              <input class="auth-popup__input" type="text" placeholder="Телефон">
+              <input class="auth-popup__input" type="email" placeholder="Email">
+              <input class="auth-popup__input" type="password" placeholder="Пароль">
+            </div>
+            <button class="auth-popup__submit btn" type="submit">Зарегистрироваться</button>
+          </form>
+          <p class="auth-popup__text">Уже есть аккаунт? <span data-auth-login>Войдите сейчас</span></p>
+          <div class="auth-popup__close"></div>
+        </div>
+      </div>
     </div>
 
     <script type="module" src="/src/js/main.js"></script>

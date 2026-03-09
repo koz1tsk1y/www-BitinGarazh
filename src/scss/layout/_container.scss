@@ -1,0 +1,22 @@
+.container {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    width: 91.67%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 94.79%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 93.33%;
+  }
+}

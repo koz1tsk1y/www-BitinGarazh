@@ -1,0 +1,40 @@
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1.67rem 0.54rem;
+    background: $primaryColor;
+    border-radius: 0.29rem;
+    outline: 0.041667rem solid transparent;
+    font-size: 0.83rem;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    transition: 0.2s all;
+    &:hover {
+        background: $darkenPrimaryColor;
+    }
+
+    &--dark {
+        padding: 0.54167rem 0.8333rem;
+        background: #000;
+        font-size: 0.66667rem;
+        &:hover {
+            outline-color: #000;
+            color: #000;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .btn {
+        padding: 1rem 3.34rem;
+        border-radius: 0.5833rem;
+        outline-width: 0.0833rem;
+        font-size: 1.16667rem;
+
+        &--dark {
+            padding: 0.65rem 0.95rem;
+            font-size: 0.85rem;
+            border-radius: 0.4rem;
+        }
+    }   
+}

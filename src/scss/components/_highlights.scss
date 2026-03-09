@@ -1,0 +1,24 @@
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    &-title {
+      font-weight: 600;
+      color: $primaryColor;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .highlights {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    &__item {
+      font-size: 1.6667rem;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+body {
+  background: #E0DEDE;
+}
+
+.hero-section {
+  &__slider {
+    width: calc(100% + (0.41667rem * 2));
+    transform: translateX(-0.41667rem);
+    .swiper-pagination {
+      position: absolute;
+      bottom: 0.8333rem;
+      left: 50%;
+      z-index: 2;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 0.625rem;
+      &-bullet {
+        width: 2.08rem;
+        height: 0.21rem;
+        border-radius: 0.67rem;
+        background: $primaryColor;
+        transition: 0.2s all;
+        &:not(&-active) {
+          opacity: 0.3;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+      &-lock {
+        display: none;
+      }
+    }
+  }
+  &__slide {
+    padding: 0 0.41667rem;
+    &-inner {
+      position: relative;
+      min-height: 16.6667rem;
+      display: flex;
+      align-items: center;
+      padding: 2.0833rem;
+      background: #fff;
+      border-radius: 0.8333rem;
+      overflow: hidden;
+    }
+    &-content {
+      position: relative;
+      z-index: 2;
+      max-width: 22.375rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.8333rem;
+    }
+    &-title {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    &-text {
+      font-size: 0.83rem;
+    }
+    &-btn {
+      width: 12.83rem;
+      font-weight: 500;
+    }
+    &-image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 31.125rem;
+      height: 17.0833rem;
+      img {
+        @extend %contain-image;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    &__slider {
+      width: calc(100% + (0.8333rem * 2));
+      transform: translateX(-0.8333rem);
+      .swiper-pagination {
+        bottom: 1.25rem;
+        gap: 1.25rem;
+        &-bullet {
+          width: 2.5rem;
+          height: 0.25rem;
+          border-radius: 1.3333rem;
+        }
+      }
+    }
+    &__slide {
+      padding: 0 0.8333rem;
+      &-inner {
+        min-height: 21.0833rem;
+        justify-content: center;
+        padding: 3.3333rem 1.66667rem;
+        border-radius: 1.6666rem;
+      }
+      &-content {
+        max-width: 25.16667rem;
+        align-items: center;
+        gap: 1.66667rem;
+        text-align: center;
+      }
+      &-text {
+        font-size: 1.16667rem;
+      }
+      &-btn {
+        width: 16.75rem;
+      }
+      &-image {
+        width: 20.3333rem;
+        height: 11.8333rem;
+      }
+    }
+  }
+}
+
+
+
+.about-section {
+  
+}

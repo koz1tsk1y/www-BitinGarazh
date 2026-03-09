@@ -1,0 +1,45 @@
+.tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    &__btns {
+        display: flex;
+        gap: 0.833rem;
+    }
+    &__btn {
+        padding: 0.625rem 1.25rem;
+        font-size: 1rem;
+        line-height: 140%;
+        outline-color: $primaryColor;
+        &:not(&--active) {
+            background: transparent;
+            color: #000;
+            outline-color: #000;
+            &:hover {
+                color: $primaryColor;
+                outline-color: $primaryColor;
+            }
+        }
+        &--active {
+            pointer-events: none;
+        }
+    }
+    &__item {
+        &:not(&--active) {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .tabs {
+        gap: 1.66667rem;
+        &__btns {
+            gap: 1.25rem;
+        }
+        &__btn {
+            padding: 0.833rem 1.66667rem;
+            font-size: 1.1667rem;
+        }
+    }
+}
